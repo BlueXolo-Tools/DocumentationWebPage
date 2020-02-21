@@ -293,6 +293,14 @@ export class DocumentationComponent implements OnInit {
     this.router.navigate(['/']);
   }
 
+  goInformation() {
+    window.location.replace('#information');
+  }
+
+  goFooter() {
+    window.location.replace('#footer');
+  }
+
   goDocumentation() {
     this.router.navigate(['/documentation']);
   }
