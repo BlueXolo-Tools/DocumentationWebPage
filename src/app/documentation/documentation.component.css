@@ -69,7 +69,7 @@
   .icon-list {
       margin-left: 1rem;
   }
-
+  
   .fa-github {
       color: white;
       padding-bottom: .8rem;
@@ -80,6 +80,14 @@
       color: white;
       padding-bottom: .8rem;
       text-decoration: none;
+  }
+
+  .zenhub-icon {
+    color: white;
+    padding-bottom: .8rem;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 600;
   }
 
   .img-fluid {
