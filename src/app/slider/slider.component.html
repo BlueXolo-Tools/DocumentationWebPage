@@ -16,7 +16,7 @@
 
 
 <div class="slider">
-  <div class="slide-button-parent-container"  *ngFor="let i of sliderArray; let x =index;" matTooltipPosition="before" matTooltip= {{tooltipList[x]}} (click)="selected(x)" (keypress)="keySelected(x)" >
+  <div class="slide-button-parent-container"  *ngFor="let i of sliderArray; let x =index" (click)="selected(x)" (keypress)="keySelected(x)" >
      <div class="select-box">
       <div class="slide-button" [ngClass]="{'slide-button-select': x == selectedIndex}" >
       </div>
