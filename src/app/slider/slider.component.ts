@@ -12,8 +12,6 @@ export class SliderComponent implements OnInit {
   sliderArray: object[];
   transform: number;
   selectedIndex: number = 0;
-  
-  tooltipList=["Main page", "What is BlueXolo?", "Main characteristics", "Main advantages"]
 
   constructor(private sliderService: SliderService) { 
     this.sliderArray = [];
