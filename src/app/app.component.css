@@ -31,6 +31,14 @@ mat-toolbar {
     text-decoration: none;
 }
 
+.zenhub-icon {
+    color: white;
+    padding-bottom: .8rem;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+
 .image-fluid {
     height: 2%;
 }
