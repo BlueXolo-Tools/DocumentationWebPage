@@ -19,6 +19,12 @@ export class SliderComponent implements OnInit {
     this.transform = 100;
   }
 
+  tooltipsList=["Main page","What is BlueXolo?","Main Characteristics","Main Advantages"]
+
+  getToolTip(x){
+    return this.tooltipsList[x]
+  }
+
   ngOnInit() {
     this.sliderService.getDataSlides().subscribe(
       (slide: Slide) => this.sliderArray = slide.sliderArray
