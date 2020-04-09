@@ -99,8 +99,8 @@ export class DocumentationComponent implements OnInit {
       content: "With the Docker image, you are able to setup and run BlueXolo in less than 10 minutes. Check more about in: ",
       link: "https://github.com/IBM/BlueXolo/blob/master/INSTALL.md",
       link_text: "BlueXolo Installation with Docker",
-      img: ["assets/images/documentation/first-steps/quick-install/docker-ubuntu-0.png",
-      "assets/images/documentation/first-steps/quick-install/docker-ubuntu-1.png"
+      img: ["assets/images/documentation/first-steps/bluexolo-docker/docker-ubuntu-0.png",
+      "assets/images/documentation/first-steps/bluexolo-docker/docker-ubuntu-1.png"
       ],
       video: this.sanitizer.bypassSecurityTrustResourceUrl("https://player.vimeo.com/video/405482560")
     },
