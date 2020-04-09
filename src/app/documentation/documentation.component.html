@@ -84,7 +84,7 @@
       <div class="contentItem" [@enterAnimation]="currentState">
         <h5 class="indexMenu">{{itemSelected.chapter}} > {{itemSelected.title}}</h5>
         <h1>{{itemSelected.title}}</h1>
-        <p>{{itemSelected.content}} <a *ngIf="itemSelected.link != null" class="link" target="_blank" href="{{itemSelected.link}}">Repository GitHub</a> </p>
+        <p>{{itemSelected.content}} <a *ngIf="itemSelected.link != null" class="link" target="_blank" href="{{itemSelected.link}}">{{itemSelected.link_text}}</a> </p>
         <div class="videoDiv" *ngIf="itemSelected.video != null">
           <div class="video-responsive">
             <iframe width="853" height="480" [src]="itemSelected.video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
