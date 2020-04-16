@@ -75,7 +75,7 @@ export class DocumentationComponent implements OnInit {
     {
       id: "3", 
       chapter: "First Steps", 
-      title: "Install", 
+      title: "Manual Installation", 
       content: "",
       img: ["assets/images/documentation/first-steps/install/install-0.png", 
             "assets/images/documentation/first-steps/install/install-1.png",
@@ -95,14 +95,14 @@ export class DocumentationComponent implements OnInit {
     {
       id: "4",
       chapter: "First Steps",
-      title: "Setup with Docker",
+      title: "Install with Docker",
       content: "With the Docker image, you are able to setup and run BlueXolo in less than 10 minutes. Check more about in: ",
-      link: "https://github.com/IBM/BlueXolo/blob/master/INSTALL.md",
+      link: "https://github.com/IBM/BlueXolo/blob/development/INSTALL_WITH_DOCKER.md",
       link_text: "BlueXolo Installation with Docker",
       img: ["assets/images/documentation/first-steps/bluexolo-docker/docker-ubuntu-0.png",
       "assets/images/documentation/first-steps/bluexolo-docker/docker-ubuntu-1.png"
       ],
-      video: this.sanitizer.bypassSecurityTrustResourceUrl("https://player.vimeo.com/video/405482560")
+      video: this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube-nocookie.com/embed/BhWienUmqY8")
     },
     /*    
     {
@@ -335,8 +335,8 @@ const TREE_DATA: FoodNode[] = [
     children: [
       {name: 'Requirements'},
       {name: 'Download'},
-      {name: 'Install'},
-      {name: 'Setup with Docker'}
+      {name: 'Manual Installation'},
+      {name: 'Install with Docker'}
     ]
   }, {
     name: 'Users',
