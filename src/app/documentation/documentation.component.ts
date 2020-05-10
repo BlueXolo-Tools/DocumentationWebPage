@@ -235,6 +235,7 @@ export class DocumentationComponent implements OnInit {
       title: "GitHub Repository", 
       content: "Go to our repository: ",
       link: "https://github.com/IBM/BlueXolo",
+      link_text: "GitHub Repository",
       img: ["assets/images/documentation/contribute/github_repository/github_repository-1.png"]
     },
     {
