@@ -67,6 +67,7 @@ export class DocumentationComponent implements OnInit {
       title: "Download", 
       content: "Go to our repository: ",
       link: "https://github.com/IBM/BlueXolo",
+      link_text: "GitHub Repository",
       img: ["assets/images/documentation/first-steps/download/download-0.png",
             "assets/images/documentation/first-steps/download/download-1.png"      
           ]
@@ -74,7 +75,7 @@ export class DocumentationComponent implements OnInit {
     {
       id: "3", 
       chapter: "First Steps", 
-      title: "Install", 
+      title: "Manual Installation", 
       content: "",
       img: ["assets/images/documentation/first-steps/install/install-0.png", 
             "assets/images/documentation/first-steps/install/install-1.png",
@@ -90,7 +91,20 @@ export class DocumentationComponent implements OnInit {
             "assets/images/documentation/first-steps/install/install-11.png",
             "assets/images/documentation/first-steps/install/install-12.png"
           ] 
-    },/*    
+    },
+    {
+      id: "4",
+      chapter: "First Steps",
+      title: "Install with Docker",
+      content: "With the Docker image, you are able to setup and run BlueXolo in less than 10 minutes. Check more about in: ",
+      link: "https://github.com/IBM/BlueXolo/blob/development/INSTALL_WITH_DOCKER.md",
+      link_text: "BlueXolo Installation with Docker",
+      img: ["assets/images/documentation/first-steps/bluexolo-docker/docker-ubuntu-0.png",
+      "assets/images/documentation/first-steps/bluexolo-docker/docker-ubuntu-1.png"
+      ],
+      video: this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube-nocookie.com/embed/BhWienUmqY8")
+    },
+    /*    
     {
       id: "4", 
       chapter: "Users", 
@@ -106,7 +120,7 @@ export class DocumentationComponent implements OnInit {
       video: this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube-nocookie.com/embed/?showinfo=0&rel=0") 
     },*/
     {
-      id: "4", 
+      id: "5", 
       chapter: "Users", 
       title: "Request Access", 
       content: "Request Access", 
@@ -117,7 +131,7 @@ export class DocumentationComponent implements OnInit {
           ] 
     },
     {
-      id: "5", 
+      id: "6", 
       chapter: "Users", 
       title: "Forgotten Password", 
       content: "Get New Password", 
@@ -127,10 +141,10 @@ export class DocumentationComponent implements OnInit {
           ]
     },
     {
-      id: "6", 
+      id: "7", 
       chapter: "Sources", 
       title: "Products", 
-      content: "Create NewProduct", 
+      content: "Create New Product", 
       img: ["assets/images/documentation/sources/products/product-1.png", 
             "assets/images/documentation/sources/products/product-2.png",
             "assets/images/documentation/sources/products/product-3.png",
@@ -138,7 +152,7 @@ export class DocumentationComponent implements OnInit {
           ] 
     },
     {
-      id: "7", 
+      id: "8", 
       chapter: "Sources", 
       title: "Commands", 
       content: "Extract OS Commands", 
@@ -150,7 +164,7 @@ export class DocumentationComponent implements OnInit {
       video: this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube-nocookie.com/embed/ReZXMvrFQOw?showinfo=0&rel=0")
     },
     {
-      id: "8", 
+      id: "9", 
       chapter: "Sources", 
       title: "Robot Framework", 
       content: "Add Robot Framework Version", 
@@ -160,7 +174,7 @@ export class DocumentationComponent implements OnInit {
           ] 
     },
     {
-      id: "9", 
+      id: "10", 
       chapter: "Sources", 
       title: "Libraries", 
       content: "Add Libraries", 
@@ -172,7 +186,7 @@ export class DocumentationComponent implements OnInit {
           video: this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube-nocookie.com/embed/ocdulq2vTL4?showinfo=0&rel=0")
     },
     {
-      id: "10", 
+      id: "11", 
       chapter: "Sources", 
       title: "Phases", 
       content: "Create New Phase", 
@@ -183,7 +197,7 @@ export class DocumentationComponent implements OnInit {
           ] 
     },
     {
-      id: "11", 
+      id: "12", 
       chapter: "Servers", 
       title: "Templates", 
       content: "Create New Template", 
@@ -194,7 +208,7 @@ export class DocumentationComponent implements OnInit {
           ] 
     },
     {
-      id: "12", 
+      id: "13", 
       chapter: "Servers", 
       title: "Profile", 
       content: "Create New Profile", 
@@ -205,7 +219,7 @@ export class DocumentationComponent implements OnInit {
           ] 
     },
     {
-      id: "13", 
+      id: "14", 
       chapter: "Servers", 
       title: "Parameters", 
       content: "Create New Parameter", 
@@ -216,15 +230,16 @@ export class DocumentationComponent implements OnInit {
           ] 
     },
     {
-      id: "14", 
+      id: "15", 
       chapter: "Contribute", 
       title: "GitHub Repository", 
       content: "Go to our repository: ",
       link: "https://github.com/IBM/BlueXolo",
+      link_text: "GitHub Repository",
       img: ["assets/images/documentation/contribute/github_repository/github_repository-1.png"]
     },
     {
-      id: "15", 
+      id: "16", 
       chapter: "Contribute", 
       title: "GitHub Forks", 
       content: "How to work with Forks on GitHub", 
@@ -321,7 +336,8 @@ const TREE_DATA: FoodNode[] = [
     children: [
       {name: 'Requirements'},
       {name: 'Download'},
-      {name: 'Install'}
+      {name: 'Manual Installation'},
+      {name: 'Install with Docker'}
     ]
   }, {
     name: 'Users',
