@@ -100,7 +100,9 @@ export class DocumentationComponent implements OnInit {
       link: "https://github.com/IBM/BlueXolo/blob/development/INSTALL_WITH_DOCKER.md",
       link_text: "BlueXolo Installation with Docker",
       img: ["assets/images/documentation/first-steps/bluexolo-docker/docker-ubuntu-0.png",
-      "assets/images/documentation/first-steps/bluexolo-docker/docker-ubuntu-1.png"
+      "assets/images/documentation/first-steps/bluexolo-docker/docker-ubuntu-1.png",
+      "assets/images/documentation/first-steps/bluexolo-docker/docker-windows-0.png",
+      "assets/images/documentation/first-steps/bluexolo-docker/docker-windows-1.png"
       ],
       video: this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube-nocookie.com/embed/BhWienUmqY8")
     },
